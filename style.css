@@ -312,3 +312,67 @@ body {
   .queries-grid { grid-template-columns: 1fr; }
 }
 }
+
+
+/* --- LOGO SYMBOL --- */
+.logo-symbol {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #fff;
+  font-family: 'Inter', monospace;
+}
+.footer .logo-symbol {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- DISCOVERY SECTION --- */
+.discovery-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.discovery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0 2rem;
+  text-align: left;
+}
+.discovery-process h3,
+.discovery-deliverables h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.discovery-list {
+  list-style: none;
+  padding: 0;
+}
+.discovery-list li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.discovery-list li::before {
+  content: '✓';
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.btn-center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .discovery-content { grid-template-columns: 1fr; gap: 2rem; }
+  .logo-symbol { font-size: 1.5rem; }
+}
